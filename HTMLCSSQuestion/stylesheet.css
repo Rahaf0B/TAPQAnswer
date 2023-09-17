@@ -1,0 +1,260 @@
+:root {
+  /* Colors: */
+  --orange-D1884F: #d1884f;
+  --turquesa-8AAA: #008aaa;
+  --blue-3BBADB: #3bbadb;
+}
+
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("./assets/fonts/Poppins-Bold.ttf");
+  font-style: "bold";
+}
+
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("./assets/fonts/Poppins-Light.ttf");
+  font-style: "bold";
+}
+
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("./assets/fonts/Poppins-Medium.ttf");
+  font-style: "Medium";
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("./assets/fonts/Poppins-Regular.ttf");
+  font-style: "Light";
+}
+
+.div-header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 50px;
+}
+
+.div-header-option-menu {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 30px;
+
+  margin-right: 7vw;
+}
+
+.div-options-icone-title {
+  width: fit-content;
+  display: flex;
+  margin: 5px;
+  padding: 10px;
+  align-items: center;
+  gap: 10px;
+  font-family: "Poppins-Regular";
+  font-size: 15px;
+}
+.icone-header {
+  width: 22px;
+}
+
+.url-option-header-menu {
+  cursor: pointer;
+}
+
+.home-option {
+  color: var(--orange-D1884F);
+}
+
+button {
+  cursor: pointer;
+}
+
+.div-main-container {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  justify-content: space-around;
+  height: 450px;
+  flex-wrap: wrap;
+}
+
+.div-description-container-text-btn {
+  height: 100%;
+  display: flex;
+  width: 31vw;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.div-text-welcome {
+  font-family: "Poppins-Regular";
+  color: var(--blue-3BBADB);
+  font-size: 1.5vw;
+}
+
+.div-text-title {
+  font-family: "Poppins-Bold";
+  color: var(--turquesa-8AAA);
+  font-size: 3vmax;
+}
+
+.span-title-descritption {
+  color: var(--orange-D1884F);
+}
+
+.div-text-description {
+  font-family: "Poppins-Medium";
+  width: 100%;
+  font-size: 1.2vw;
+}
+
+.span-more-description {
+  color: var(--blue-3BBADB);
+}
+.div-description-container-img {
+  height: 50vh;
+  width: 26vw;
+
+  position: relative;
+}
+
+.img-self-image {
+  height: 100%;
+  max-width: 100%;
+  width: 26vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0 0 0 150px;
+}
+
+.home-body-description-img-background {
+  background-color: var(--blue-3BBADB);
+  width: 100%;
+  height: 46vh;
+  position: absolute;
+  top: 30px;
+  left: -15px;
+  border-radius: 0 0 0 150px;
+}
+
+.div-container-btn {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+.div-btn-shadow {
+  position: relative;
+  width: 100%;
+}
+.div-container-btn {
+  width: 100%;
+}
+
+.div-container-btn button {
+  font-family: "Poppins-Light";
+  padding: 2px 15px;
+  border-radius: 5px;
+  font-size: 17px;
+
+  width: fit-content;
+}
+
+.div-btn-description {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.div-shadow {
+  position: absolute;
+}
+
+.btn-hire {
+  background-color: var(--turquesa-8AAA);
+
+  color: white;
+  border: none;
+  box-shadow: 0px 4px rgb(0 138 170 / 10%);
+}
+.btn-see-project {
+  background-color: white;
+  color: var(--turquesa-8AAA);
+  border-color: var(--turquesa-8AAA);
+}
+
+@media (max-width: 1200px) {
+  .div-text-welcome {
+    font-size: 2vw !important;
+  }
+
+  .div-text-description {
+    font-size: 2vw !important;
+  }
+}
+@media (max-width: 1000px) {
+  .div-description-container-img {
+    width: 35vw !important;
+  }
+  .img-self-image {
+    width: 35vw !important;
+  }
+
+  .div-container-btn button {
+    font-size: 15px !important;
+  }
+}
+
+@media (max-width: 840px) {
+  .div-text-welcome {
+    font-size: 4vw !important;
+  }
+
+  .div-text-title {
+    font-size: 4vw !important;
+  }
+
+  .div-description-container-img {
+    height: 46vh !important;
+  }
+
+  .home-body-description-img-background {
+    height: 43vh !important;
+  }
+
+  .div-description-container-text-btn {
+    width: 33vw;
+    height: 55vh !important;
+  }
+  .div-container-btn button {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .div-description-container-img {
+    height: 38vh !important;
+    width: 34vw !important;
+  }
+  .img-self-image {
+    width: 34vw !important;
+  }
+  .home-body-description-img-background {
+    height: 33vh !important;
+  }
+  .div-container-btn button {
+    font-size: 10px !important;
+    padding: 2px 1.5vw;
+  }
+  .div-text-description {
+    font-size: 10px !important;
+  }
+
+  .div-description-container-text-btn {
+    height: 100% !important;
+  }
+}
