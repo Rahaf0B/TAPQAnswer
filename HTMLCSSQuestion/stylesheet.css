@@ -113,6 +113,7 @@ button {
 
 .span-more-description {
   color: var(--blue-3BBADB);
+  cursor: pointer;
 }
 .div-description-container-img {
   height: 50vh;
